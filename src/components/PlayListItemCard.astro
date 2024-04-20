@@ -13,6 +13,7 @@ const artistsString = artists.join(', ')
 <a
   href={`/playlist/${id}`}
   class='playlist-item transition-all duration-300 flex relative p-2 overflow-hidden gap-2 pb-4 rounded-md hover:bg-zinc-800 shadow-lg hover:shadow-xl bg-zinc-500/30 w-40 flex-col hover: cursor-pointer'
+  transition:name=`playlist ${id} box`
 >
   <picture class='aspect-square w-full flex-none'>
     <img
