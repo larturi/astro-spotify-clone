@@ -9,8 +9,6 @@ export async function GET({ params, request }) {
   const playlist = allPlaylists.find((playlist) => playlist.id === id)
   const songs = allSongs.filter((song) => song.albumId === playlist?.albumId)
 
-  console.log(playlist)
-
   return new Response(JSON.stringify({ playlist, songs }), {
     headers: { 'content-type': 'application/json' }
   })
