@@ -1,0 +1,12 @@
+---
+import { type Song } from '@/lib/data'
+import TableSongs from '@/components/react/TableSongs'
+
+interface Props {
+  songs: Song[]
+}
+
+const { songs } = Astro.props
+---
+
+<TableSongs client:load songs={songs} />

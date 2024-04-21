@@ -150,7 +150,7 @@ export const songs: Song[] = [
   {
     id: 8,
     albumId: 2,
-    title: 'Midnight Tales',
+    title: '404 not found (it is the real name)',
     image: `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
     artists: ['Urban Nocturne'],
     album: 'Midnight Tales',
@@ -222,7 +222,7 @@ export const songs: Song[] = [
   {
     id: 16,
     albumId: 4,
-    title: 'Lunar',
+    title: 'Mars',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Tenno'],
     album: 'Study Session',
@@ -231,7 +231,7 @@ export const songs: Song[] = [
   {
     id: 17,
     albumId: 4,
-    title: 'Go go go!',
+    title: 'Mama mia!',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Tenno'],
     album: 'Study Session',
@@ -240,7 +240,7 @@ export const songs: Song[] = [
   {
     id: 18,
     albumId: 4,
-    title: 'Keep focus!',
+    title: 'Php or Java',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Tenno'],
     album: 'Study Session',
@@ -249,7 +249,7 @@ export const songs: Song[] = [
   {
     id: 19,
     albumId: 4,
-    title: 'JavaScript is the way',
+    title: 'Docker is the word',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Tenno'],
     album: 'Study Session',
@@ -258,7 +258,7 @@ export const songs: Song[] = [
   {
     id: 20,
     albumId: 4,
-    title: 'No more TypeScript for me',
+    title: 'The song number twenty',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Tenno'],
     album: 'Study Session',
@@ -267,7 +267,7 @@ export const songs: Song[] = [
   {
     id: 21,
     albumId: 5,
-    title: 'Moonlit Walk',
+    title: 'Second France',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['LoFi Dreamer'],
     album: 'Chill Lo-Fi Music',
@@ -312,7 +312,7 @@ export const songs: Song[] = [
   {
     id: 26,
     albumId: 6,
-    title: "Night's End",
+    title: "Night's Start",
     image: 'https://f4.bcbits.com/img/a0363730459_16.jpg',
     artists: ['WFS', 'Nadav Cohen'],
     album: 'Chill Lo-Fi Music',
