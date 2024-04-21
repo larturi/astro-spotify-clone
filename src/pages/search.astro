@@ -1,0 +1,17 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import SearchSong from '@/components/SearchSong'
+---
+
+<Layout title='Astro Spotify Clone'>
+  <div id='playlist-container' class='relative'>
+    <div class='relative z-10 px-6'>
+      <div class='pt-5 mb-0'>
+        <h1 class='text-3xl text-white font-semibold'>Search</h1>
+      </div>
+      <div class='mt-7'>
+        <SearchSong client:load />
+      </div>
+    </div>
+  </div>
+</Layout>

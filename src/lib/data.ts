@@ -130,7 +130,7 @@ export const songs: Song[] = [
     duration: '4:20'
   },
   {
-    id: 1,
+    id: 6,
     albumId: 2,
     title: 'Silent Rain',
     image: `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
@@ -139,7 +139,7 @@ export const songs: Song[] = [
     duration: '3:40'
   },
   {
-    id: 2,
+    id: 7,
     albumId: 2,
     title: 'Lost Pages',
     image: `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
@@ -148,7 +148,7 @@ export const songs: Song[] = [
     duration: '3:20'
   },
   {
-    id: 3,
+    id: 8,
     albumId: 2,
     title: 'Midnight Tales',
     image: `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
@@ -157,7 +157,7 @@ export const songs: Song[] = [
     duration: '3:50'
   },
   {
-    id: 4,
+    id: 9,
     albumId: 2,
     title: 'City Lights',
     image: `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
@@ -166,7 +166,7 @@ export const songs: Song[] = [
     duration: '3:30'
   },
   {
-    id: 5,
+    id: 10,
     albumId: 2,
     title: 'Night Drive',
     image: `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
@@ -175,7 +175,7 @@ export const songs: Song[] = [
     duration: '4:20'
   },
   {
-    id: 1,
+    id: 11,
     albumId: 3,
     title: 'Lunar',
     image: `https://f4.bcbits.com/img/a1435058381_65.jpg`,
@@ -184,7 +184,7 @@ export const songs: Song[] = [
     duration: '3:40'
   },
   {
-    id: 2,
+    id: 12,
     albumId: 3,
     title: 'Go go go!',
     image: `https://f4.bcbits.com/img/a1435058381_65.jpg`,
@@ -193,7 +193,7 @@ export const songs: Song[] = [
     duration: '3:20'
   },
   {
-    id: 3,
+    id: 13,
     albumId: 3,
     title: 'Keep focus!',
     image: `https://f4.bcbits.com/img/a1435058381_65.jpg`,
@@ -202,7 +202,7 @@ export const songs: Song[] = [
     duration: '2:40'
   },
   {
-    id: 4,
+    id: 14,
     albumId: 3,
     title: 'JavaScript is the way',
     image: `https://f4.bcbits.com/img/a1435058381_65.jpg`,
@@ -211,7 +211,7 @@ export const songs: Song[] = [
     duration: '3:10'
   },
   {
-    id: 5,
+    id: 15,
     albumId: 3,
     title: 'No more TypeScript for me',
     image: `https://f4.bcbits.com/img/a1435058381_65.jpg`,
@@ -220,7 +220,7 @@ export const songs: Song[] = [
     duration: '2:10'
   },
   {
-    id: 1,
+    id: 16,
     albumId: 4,
     title: 'Lunar',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
@@ -229,7 +229,7 @@ export const songs: Song[] = [
     duration: '3:40'
   },
   {
-    id: 2,
+    id: 17,
     albumId: 4,
     title: 'Go go go!',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
@@ -238,7 +238,7 @@ export const songs: Song[] = [
     duration: '3:20'
   },
   {
-    id: 3,
+    id: 18,
     albumId: 4,
     title: 'Keep focus!',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
@@ -247,7 +247,7 @@ export const songs: Song[] = [
     duration: '2:40'
   },
   {
-    id: 4,
+    id: 19,
     albumId: 4,
     title: 'JavaScript is the way',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
@@ -256,7 +256,7 @@ export const songs: Song[] = [
     duration: '3:10'
   },
   {
-    id: 5,
+    id: 20,
     albumId: 4,
     title: 'No more TypeScript for me',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
@@ -265,7 +265,7 @@ export const songs: Song[] = [
     duration: '2:10'
   },
   {
-    id: 1,
+    id: 21,
     albumId: 5,
     title: 'Moonlit Walk',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
@@ -274,7 +274,7 @@ export const songs: Song[] = [
     duration: '3:12'
   },
   {
-    id: 2,
+    id: 22,
     albumId: 5,
     title: 'Coffee Daze',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
@@ -283,7 +283,7 @@ export const songs: Song[] = [
     duration: '4:07'
   },
   {
-    id: 3,
+    id: 23,
     albumId: 5,
     title: 'Skyline Serenade',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
@@ -292,7 +292,7 @@ export const songs: Song[] = [
     duration: '3:50'
   },
   {
-    id: 4,
+    id: 24,
     albumId: 5,
     title: 'Urban Echoes',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
@@ -301,7 +301,7 @@ export const songs: Song[] = [
     duration: '3:30'
   },
   {
-    id: 5,
+    id: 25,
     albumId: 5,
     title: "Night's End",
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
@@ -310,7 +310,7 @@ export const songs: Song[] = [
     duration: '4:20'
   },
   {
-    id: 5,
+    id: 26,
     albumId: 6,
     title: "Night's End",
     image: 'https://f4.bcbits.com/img/a0363730459_16.jpg',
