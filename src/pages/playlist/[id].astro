@@ -1,11 +1,31 @@
 ---
+import MusicsTable from '@/components/MusicsTable.astro'
 import Layout from '@/layouts/Layout.astro'
-import PlayListItemCard from '@/components/PlayListItemCard.astro'
 import { allPlaylists, songs } from '@/lib/data'
 
 const { id } = Astro.params
 const playlist = allPlaylists.find((playlist) => playlist.id === id)
 const playlistsSongs = songs.filter((song) => song.albumId === playlist?.albumId)
+
+function convertDurationToMinutes(duration: string) {
+  const [minutes, seconds] = duration.split(':').map(Number)
+  return minutes + seconds / 60
+}
+
+// Calcula la duración total de la lista de reproducción en minutos
+const totalDurationInMinutes = playlistsSongs.reduce((total, playlist) => {
+  return total + convertDurationToMinutes(playlist.duration)
+}, 0)
+
+let totalDurationForHumans = ''
+
+if (totalDurationInMinutes < 60) {
+  totalDurationForHumans = Math.floor(totalDurationInMinutes) + ' minutos aproximadamente'
+}
+
+if (totalDurationInMinutes >= 60) {
+  totalDurationForHumans = Math.floor(totalDurationInMinutes / 60) + ' horas aproximadamente'
+}
 ---
 
 <Layout title='Astro Spotify Clone'>
@@ -32,7 +52,6 @@ const playlistsSongs = songs.filter((song) => song.albumId === playlist?.albumId
             transition:name=`playlist ${playlist?.id} title`
           >
             {playlist?.title}
-            <!-- <span transition:name=`playlist ${playlist?.id} title`></span> -->
           </h1>
         </div>
 
@@ -42,17 +61,21 @@ const playlistsSongs = songs.filter((song) => song.albumId === playlist?.albumId
               <span>{playlist?.artists.join(', ')}</span>
             </div>
             <p class='mt-1'>
-              <!-- <span class='text-white'>{playListSongs.length} canciones</span>, 3 h aproximadamente -->
+              <span class='text-white'
+                >{playlistsSongs.length} {playlistsSongs.length > 1 ? 'canciones' : 'canción'}
+              </span>, {totalDurationForHumans}
             </p>
           </div>
         </div>
       </div>
     </header>
 
-    <div class='relative z-10 px-6'></div>
+    <div class='relative z-10 px-6 pt-10'></div>
 
-    <div class='absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 -z-10'></div>
+    <div class='absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 -z-[1]'></div>
+
+    <section class='p-6'>
+      <MusicsTable songs={playlistsSongs} />
+    </section>
   </div>
 </Layout>
-
-<style></style>
