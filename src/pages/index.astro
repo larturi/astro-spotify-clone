@@ -6,17 +6,21 @@ import Greeting from '@/components/svelte/Greeting.svelte'
 ---
 
 <Layout title='Astro Spotify Clone'>
-  <div id='playlist-container' class='relative transition-all duration-1000 bg-green-600'>
-    <div class='relative z-10 px-6'>
-      <div class='pt-5 mb-0'>
+  <div
+    id='playlist-container'
+    class='sm:relative sm:transition-all sm:duration-1000 sm:bg-green-600'
+  >
+    <div class='sm:relative sm:z-10 sm:px-6 px-3'>
+      <div class='sm:pt-5 sm:mb-0 sm:mt-0 mt-5'>
         <Greeting />
       </div>
-      <div class='flex flex-wrap mt-6 gap-4'>
+      <div class='flex flex-col mt-6 gap-4 sm:flex-wrap sm:flex-row'>
         {playlists.map((playlist) => <PlayListItemCard playlist={playlist} />)}
       </div>
     </div>
 
-    <div class='absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80'></div>
+    <div class='sm:absolute sm:inset-0 sm:bg-gradient-to-t sm:from-zinc-900 sm:via-zinc-900/80'>
+    </div>
   </div>
 </Layout>
 

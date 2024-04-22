@@ -34,8 +34,8 @@ if (totalDurationInMinutes >= 60) {
     class='relative flex flex-col h-full bg-zinc-900 overflow-x-hidden'
     transition:name=`playlist ${id} box`
   >
-    <header class='flex flex-row gap-8 px-6 mt-12'>
-      <picture class='aspect-square w-52 h-52 flex-none'>
+    <header class='flex flex-row gap-8 px-3 mt-6 sm:px-6 sm:mt-12'>
+      <picture class='aspect-square w-14 h-14 sm:w-52 sm:h-52 flex-none'>
         <img
           src={playlist?.cover}
           alt={`Cover of ${playlist?.title}`}
@@ -48,7 +48,7 @@ if (totalDurationInMinutes >= 60) {
         <h2 class='flex flex-1 items-end text-white'>Playlist</h2>
         <div>
           <h1
-            class='text-5xl font-bold block text-white'
+            class='sm:text-5xl text-xl font-bold block text-white'
             transition:name=`playlist ${playlist?.id} title`
           >
             {playlist?.title}
@@ -60,7 +60,7 @@ if (totalDurationInMinutes >= 60) {
             <div transition:name=`playlist ${playlist?.id} artists`>
               <span>{playlist?.artists.join(', ')}</span>
             </div>
-            <p class='mt-1'>
+            <p class='mt-4 sm:mt-1'>
               <span class='text-white'
                 >{playlistsSongs.length} {playlistsSongs.length > 1 ? 'canciones' : 'canción'}
               </span>, {totalDurationForHumans}
@@ -70,11 +70,11 @@ if (totalDurationInMinutes >= 60) {
       </div>
     </header>
 
-    <div class='relative z-10 px-6 pt-10'></div>
+    <div class='sm:relative sm:z-10 sm:px-6 sm:pt-10'></div>
 
     <div class='absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 -z-[1]'></div>
 
-    <section class='p-6'>
+    <section class='sm:p-6'>
       <MusicsTable songs={playlistsSongs} />
     </section>
   </div>
