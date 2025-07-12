@@ -1,6 +1,6 @@
 import { songs } from '@/lib/data'
 
-export async function GET({ params, request }) {
+export async function GET({ request }) {
   const { url } = request
   const urlObject = new URL(url)
   const id = urlObject.searchParams.get('id')
